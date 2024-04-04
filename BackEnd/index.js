@@ -14,7 +14,7 @@ app.use(cors({
 
 dotenv.config();
 
-const PORT = process.env.PORT || 5000
+// const PORT = process.env.PORT || 5000
 const MONGOURL = process.env.MONGOURL
 
 mongoose.connect(MONGOURL) 
@@ -66,6 +66,4 @@ app.put('/completetask/:id', async (req, res) => {
     .catch((err) => res.json(err))
 })
 
-app.listen(PORT, () => {
-    console.log("Listening on PORT " + PORT)
-})
+app.listen()
