@@ -1,0 +1,102 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+/* Task Style */
+.task-parent {
+  color: white;
+  background-color: white;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-parent .checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  border: 2px solid green;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.task-parent .checkbox.checked {
+  background-color: white;
+}
+
+.task-parent .task-text {
+  overflow: auto;
+  margin: auto 10px;
+}
+
+.task-parent .task-text .text{
+  text-align: left;
+  margin: auto 10px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.task-parent .task-text .text.completed {
+  text-decoration: line-through;
+}
+
+.task-parent .bin {
+  cursor: pointer;
+  color: black
+}
+
+.task-parent .bin:hover {
+  color:red
+}
+
+
+.addtask-parent {
+  background-color: black;
+  padding: 5px;
+  border-radius: 6px;
+  max-width: 500px;
+  margin:  auto;
+}
+
+.addtask-parent form input {
+  width: 100%;
+  padding: 10px 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.addtask-parent form button {
+  margin: 10px;
+  background-color: white;
+}
+
+.addtask-parent form button:hover {
+  box-shadow: 0px 0px 2px 2px #d1d1d1;
+  background-color: white;
+  color: black
+}
+
+
+.task-parent {
+  color: black
+}
+
+.completetaskParent {
+  color: white;
+  background-color: yellow;
+}
+
+
+
+.tick {
+  margin-top: -10px;
+  margin-left: -1px;
+}
+/* Task Style */
