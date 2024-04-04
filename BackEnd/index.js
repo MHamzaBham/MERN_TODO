@@ -10,7 +10,7 @@ app.use(cors())
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGOURL)
+mongoose.connect("mongodb+srv://Hamza:alialibham@cluster01.njpdmew.mongodb.net/")
 
 const taskSchema = new mongoose.Schema({
     title: String,
