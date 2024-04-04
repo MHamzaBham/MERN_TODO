@@ -13,9 +13,11 @@ app.use(cors({
 }))
 
 dotenv.config();
-const PORT = "https://merntodoserver-qvl1dcd5f-hamzas-projects-65c05261.vercel.app/";
 
-mongoose.connect("mongodb+srv://<Hamza>:<alialibham>@cluster01.njpdmew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01") 
+const PORT = process.env.PORT || 5000
+const MONGOURL = process.env.MONGOURL
+
+mongoose.connect(MONGOURL) 
 
 const taskSchema = new mongoose.Schema({
     title: String,
