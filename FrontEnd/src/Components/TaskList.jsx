@@ -8,7 +8,7 @@ export default function TaskList() {
 
     useEffect(() => {
         const loadData = (async () => {
-            await axios.get("http://localhost:8000/getTasks")
+            await axios.get("https://mern-todo-api-bay.vercel.app/gettasks")
             .then((data) => {
                 setTasks(data.data)
             })

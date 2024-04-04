@@ -8,7 +8,7 @@ export default function Task(props) {
     // Deleting Task
     document.querySelectorAll('.bin').forEach((e) => {
         e.onclick = (e) => {
-            axios.delete(`http://localhost:8000/deletetask/${e.currentTarget.id}`)
+            axios.delete(`https://mern-todo-api-bay.vercel.app/deletetask/${e.currentTarget.id}`)
                 .then()
                 .catch((err) => console.log(err))
         };

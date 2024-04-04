@@ -15,7 +15,7 @@ app.use(cors({
 dotenv.config();
 
 
-const dev_db_url = "mongodb+srv://vercel-admin-user:vercelpassword@cluster01.njpdmew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01"
+const dev_db_url = "mongodb+srv://vercel-admin-user:vercelpassword@cluster01.njpdmew.mongodb.net/TodoApp?retryWrites=true&w=majority&appName=Cluster01"
 // const PORT = process.env.PORT || 80
 const MONGOURL = process.env.MONGOURL || dev_db_url 
 

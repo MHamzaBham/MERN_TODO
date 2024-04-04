@@ -8,7 +8,7 @@ export default function AddTask() {
     async function addTask(e) {
         e.preventDefault();
         if (!(taskToAdd === null || taskToAdd.match(/^ *$/) !== null)) {
-            await axios.post("http://localhost:8000/addtask", { title: taskToAdd, date: Date() })
+            await axios.post("https://mern-todo-api-bay.vercel.app/addtask", { title: taskToAdd, date: Date() })
                 .then(task => console.log(task))
                 .catch(err => console.log(err))
             setTaskToAdd("")
