@@ -14,8 +14,10 @@ app.use(cors({
 
 dotenv.config();
 
-// const PORT = process.env.PORT || 5000
-const MONGOURL = process.env.MONGOURL
+
+const dev_db_url = "mongodb+srv://<username>:<password>@cluster01.njpdmew.mongodb.net/ToDoApp?retryWrites=true&w=majority&appName=Cluster01"
+const PORT = process.env.PORT || 80
+const MONGOURL = process.env.MONGOURL || dev_db_url 
 
 mongoose.connect(MONGOURL) 
 
@@ -66,4 +68,6 @@ app.put('/completetask/:id', async (req, res) => {
     .catch((err) => res.json(err))
 })
 
-app.listen()
+app.listen(PORT, () => {
+    console.log("Server is litening")
+})
