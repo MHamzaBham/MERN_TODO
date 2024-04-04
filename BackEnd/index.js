@@ -13,7 +13,7 @@ app.use(cors({
 }))
 
 dotenv.config();
-const PORT = process.env.PORT || 3000;
+const PORT = "https://merntodoserver-qvl1dcd5f-hamzas-projects-65c05261.vercel.app/";
 
 mongoose.connect("mongodb+srv://<Hamza>:<alialibham>@cluster01.njpdmew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01") 
 
