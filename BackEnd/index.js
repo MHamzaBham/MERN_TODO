@@ -15,7 +15,7 @@ app.use(cors({
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect("mongodb+srv://Hamza:alialibham@cluster01.njpdmew.mongodb.net/TodoApp")
+mongoose.connect("mongodb+srv://<Hamza>:<alialibham>@cluster01.njpdmew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01") 
 
 const taskSchema = new mongoose.Schema({
     title: String,
