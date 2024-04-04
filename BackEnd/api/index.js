@@ -68,4 +68,5 @@ app.put('/completetask/:id', async (req, res) => {
     .catch((err) => res.json(err))
 })
 
-app.listen()
+app.listen();
+module.exports = app;
