@@ -1,11 +1,12 @@
 import './App.css';
 import AddTask from './Components/AddTask';
+import axios from 'axios'
 
 // Components
 import TaskList from './Components/TaskList'
 
 function App() {
-
+  axios.defaults.withCredentials = true
   const parentStyle  = {
     textAlign: "center"
   }

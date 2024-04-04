@@ -3,6 +3,8 @@ import axios from 'axios'
 
 export default function AddTask() {
 
+    axios.defaults.withCredentials = true
+
     let [taskToAdd, setTaskToAdd] = useState("")
 
     async function addTask(e) {

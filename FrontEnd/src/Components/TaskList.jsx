@@ -4,6 +4,8 @@ import axios from 'axios'
 
 export default function TaskList() {
 
+    axios.defaults.withCredentials = true
+
     const [tasks, setTasks] = useState([]);
 
     useEffect(() => {

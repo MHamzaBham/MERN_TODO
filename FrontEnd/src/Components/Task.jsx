@@ -4,6 +4,8 @@ import * as Icon from 'react-bootstrap-icons'
 
 export default function Task(props) {
 
+    axios.defaults.withCredentials = true
+
 
     // Deleting Task
     document.querySelectorAll('.bin').forEach((e) => {
