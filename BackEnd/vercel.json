@@ -1,12 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        { "src": "*.js"}
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-    ]
-}
+    "builds": [{ "src": "src/index.ts", "use": "@now/node" }],
+    "routes": [{ "handle": "vercel", "src": "/(.*)" }]
+  }
