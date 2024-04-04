@@ -1,12 +1,1 @@
-{
-    "version": 2,
-    "builds": [
-      { "src": "*.js", "use": "@now/node", "config": { "maxLambdaSize": "15mb" } }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "/" }
-    ]
-}
-
-
-  
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
