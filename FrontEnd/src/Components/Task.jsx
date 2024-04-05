@@ -20,7 +20,7 @@ export default function Task(props) {
     document.querySelectorAll('.checkbox').forEach((e) => {
         e.onclick = (e) => {
             console.log(e.currentTarget.id)
-            axios.put(`http://localhost:8000/completetask/${e.currentTarget.id}`)
+            axios.put(`https://mern-todo-api-bay.vercel.app/completetask/${e.currentTarget.id}`)
                 .then()
                 .catch((err) => console.log(err))
         };
